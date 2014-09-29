@@ -1,249 +1,333 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 	<head>
-		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<meta name="description" content="The Future Engineers Robotics Camp">
-		<meta name="author" content="Aashish Kapur">
+	    <title>The Water Conservation Project!</title>
+	    <meta charset="utf-8" />
+	    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+	    <!-- css -->
+	    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+	    <link href="css/style.css" rel="stylesheet" media="screen">
+		<link href="color/default.css" rel="stylesheet" media="screen">
+		<script src="js/modernizr.custom.js"> </script>
 
-		<title>Future Engineers Summer Camp</title>
-		<!-- should add favicon later -->
-		<!-- Bootstrap core CSS -->
-		<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
-		<style type="text/css">
-			.navbar-inverse 
-			{
-				background: rgba(0, 0, 0, 0.7);
-			}
-		</style>
-		<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-		<!--[if lt IE 9]>
-			<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-			<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-		<![endif]-->
-
-		<!-- Custom styles for this template -->
-		<link href="css/carousel.css" rel="stylesheet">
-		<link href="/images/favicon.ico" rel="icon" type="image/x-icon" />
-		<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
-	</head>
-<!-- NAVBAR    
-================================================== -->
-	<body>
-		<div class="navbar-wrapper">
-			<div class="container">
-				<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-					<div class="container">
-						<a class="navbar-brand active" href="#">Future Engineers</a>
-						<div class="navbar-collapse collapse" id="top-nav">
-							<ul class="nav navbar-nav">
-								<li class="active"><a href="#home"><i class="fa fa-home fa-lg"></i> Home</a></li>
-								<li class=""><a href="#about"><i class="fa fa-users fa-lg"></i> About Us</a><li/>
-								<li class=""><a href="#philosophy"><i class="fa fa-dot-circle-o fa-lg"></i> Philosophy</a></li>
-								<li class=""><a href="#p-functions"><i class="fa fa-cogs fa-lg"></i> Power Functions</a></li>
-								<li class=""><a href="#nxt"><i class="fa fa-wrench fa-lg"></i> NXT</a></li>
-								<li class=""><a href="#battlebots"><i class="fa fa-shield fa-lg"></i> Battle Bots</a></li>
-								<li class=""><a href="#signup"><i class="fa fa-pencil-square-o fa-lg"></i> Sign Up!</a></li>
-								<li class=""><a href="news.html"><i class="fa fa-list-alt fa-lg"></i> Latest News</a></li>
-							</ul>
-						</div>
-					</div>
-				</div>
-
-			</div>
-		</div>
-
-
-		<!-- Carousel
-		================================================== -->
-		<a id="home" name="home"></a>
-		<div id="myCarousel" class="carousel slide" data-ride="carousel">
-			<!-- Indicators -->
-			<ol class="carousel-indicators">
-				<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-				<li data-target="#myCarousel" data-slide-to="1"></li>
-				<li data-target="#myCarousel" data-slide-to="2"></li>
-			</ol>
-			<div class="carousel-inner">
-				<div class="item active">
-					<img src="images/BKGR.jpg" alt="First slide">
-					<div class="container">
-						<div class="carousel-caption">
-							<h1 style="font-size: 3em; font-weight:1000; ">Sign Up!</h1>
-							<p style="text-shadow: 5px 1px 10px rgba(150, 150, 150, 1);">Sign up for our awesome camp!</p>
-
-							<p><a class="btn btn-lg btn-primary" href="#signup" role="button">Sign up today</a></p>
-						</div>
-					</div>
-				</div>
-				<div class="item">
-					<img src="images/BKGR2.jpeg" alt="Second slide">
-					<div class="container">
-						<div class="carousel-caption">
-							<h1>Learn about our curriculum!</h1>
-							<p>We'll be covering many different concepts, using NXTs and Power Functions.</p>
-							<p><a class="btn btn-lg btn-primary" href="#p-functions" role="button">Learn more</a></p>
-						</div>
-					</div>
-				</div>
-				<div class="item">
-					<img src="images/BKGR3.jpg" alt="Third slide">
-					<div class="container">
-						<div class="carousel-caption">
-							<h1>Read the Latest News!</h1>
-							<p>New information and details reguarding the camp.</p>
-							<p><a class="btn btn-lg btn-primary" href="news.html" role="button">Latest News</a></p>
-						</div>
-					</div>
-				</div>
-			</div>
-	  <a class="left carousel-control" href="#myCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
-			<a class="right carousel-control" href="#myCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
 		
-		</div><!-- /.carousel -->
+
+		<style>
+		*{
+			z-index: 50;
+		}
+		#video{
+	/*		top: 17.5%;
+			left: 25%;
+			transform: translate(-50%, -50%);*/
+			/*top: -150px;*/
+			top: -35%;
+			left: 17.5%;
+			/*left: 25%;*/
+			position: absolute;
+			z-index: -100;
+			width: 850px;
+			height: 450px;
+			/*background-color: rgba(250, 50, 25, .8);*/
+		}
+
+		#overlay-text{
+			height: 100%;
+			/*background-color: rgba(0, 255, 0, 0.2);*/
+		}
+
+		#intro-row{
+			overflow: hidden;
+		}
+		</style>
+	</head>
+  <body>
+	<div class="menu-area">
+			<div id="dl-menu" class="dl-menuwrapper">
+						<button class="dl-trigger">Open Menu</button>
+						<ul class="dl-menu">
+							<li>
+								<a href="#intro">Home</a>
+							</li>
+							<li><a href="#about">About</a></li>
+
+							<li><a href="#conserve">Conserve Water</a></li>
+
+							<li><a href="#contact">Contact</a></li>
+
+							<li>
+								
+								</ul>
+							</li>
+						</ul>
+					</div><!-- /dl-menuwrapper -->
+	</div>	
+
+	  <!-- intro area -->	
+
+	  <div id="intro">
+<div class="brand">
+	  	<h1> The Water Conservation Project</a></h1>
+	  	
+<font face="opens sans" color="white"> </font>
+<br>
 
 
-		<!-- Marketing messaging and featurettes
-		================================================== -->
-		<!-- Wrap the rest of the page in another container to center all the content. -->
-		<div class="container marketing">
+	  <object width="880" height="480"
+data="https://www.youtube.com/v/nD6uifbpaCY">
+</object>
 
+			<!-- <div class="intro-text">
 
-			<div style="position:relative;">
-				<a id="about" name="about" style="position:absolute; top:-70px;"></a>
-			</div>
+				<div class="container">
 
-			<!-- Three columns of text below the carousel -->
-			<div class="row" id="about">
-				<div class="col-lg-4">
-					<img class="img-circle" src="images/aashish.jpg" width="250px" height="250px" alt="Aashish">
-					<a name="about"></a>
-					<h2>Aashish Kapur</h2>
-					<p>Aashish Kapur, a senior at Monta Vista High School, is a build lead on the Monta Vista Robotics Team, where he and other members are responsible for building a robot to compete in the First Robotics Competition challenge.  He is a two-time FLL coach and 2 year participant in FLL, where he gained knowledge with the LEGO NXT system.</p>
-<!-- 					<p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
- -->				</div><!-- /.col-lg-4 -->
-				<div class="col-lg-4">
-					<img class="img-circle" src="images/tyler.jpg" width="250px" height="250px" alt="Tyler">
-					<h2>Tyler Smithline</h2>
-					<p>Tyler is a four-time First Lego League® participant who has helped his team win three champion’s awards.  He is the author of <a href="http://halfrobot.blogspot.com">halfrobot.blogspot.com</a>  and is the youngest member of the Cupertino Teen Commission.   He loves helping kids learn and is excited to share his passion for engineering with lego.</p>
-<!-- 					<p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
- -->				</div><!-- /.col-lg-4 -->
-				<div class="col-lg-4">
-					<img class="img-circle" src="images/sameer1.jpg" width="250px" height="250px" alt="Sameer">
-					<h2>Sameer Kapur</h2>
-					<p>Sameer is a three-time FIRST LEGO League® participant and experienced young entrepreneur.  He started his first successful business while in middle school, and is a key contributor behind the scenes at Future Engineers Summer Camp.
-</p>
-<!-- 					<p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
- -->				</div><!-- /.col-lg-4 -->
-			</div><!-- /.row -->
+					<div class="row" id="intro-row">
+						
 
+						<div id="overlay-text" class="col-xs-12"> 
 
-			<!-- START THE FEATURETTES -->
+							<div class="brand">
+								<h1><a href="index.html">The Water Conservation Project</a></h1>
 
-			<hr class="featurette-divider">
-
-			<div style="position:relative;">
-				<a id="philosophy" name="philosophy" style="position:absolute; top:-100px;"></a>
-			</div>
-			<div class="row featurette">
-				<div class="col-md-7">
-					<h2 class="featurette-heading">Our Philosophy<span class="text-muted"> Robots are fun.</span></h2>
-					<p class="lead">If you like building things, engineering may be a great field for you, and Lego is a fun, easy way to learn it. Through our personal passion for building with Lego, we’ve found it invaluable to understand and apply mechanical engineering principles. Now we want to share our passion with other kids and help them become great builders, all while having tons of fun.</p>
+-->
+						
+					<!-- <div class="line-spacer"></div> -->
+								<p><span></span></p>
+							</div>
+						</div>
+					</div>
 				</div>
-				<div class="col-md-5">
-					<img class="featurette-image img-responsive" src="images/flower.jpg" alt="Generic placeholder image">
-				</div>
-			</div>
-
-			<hr class="featurette-divider">
-
-			<div style="position:relative;">
-				<a id="p-functions" name="p-functions" style="position:absolute; top:-90px;"></a>
-			</div>
-			<div class="row featurette">
-				<div class="col-md-5">
-					<img class="featurette-image img-responsive" src="images/power-functions.jpg">
-				</div>
-				<div class="col-md-7">
-					<h2 class="featurette-heading">Power Functions<span class="text-muted"> An innovative way to remotely control robots!</span></h2>
-					<p class="lead">Power Functions are an electric building system developed by the LEGO company to help kids understand robtics. We'll be using them a bunch during the week. You have battery boxes to deliver the power, different types of motors to make things move, lights, a remote control, and even a connection to a computer. Everything fits together in one system to let you build and control your own inventions.</p>
-				</div>
-			</div>
-
+		 	</div>
 			
-			<hr class="featurette-divider">
+	 </div>
+	  
 
-			<div style="position:relative;">
-				<a id="nxt" name="nxt" style="position:absolute; top:-85px;"></a>
+	  
+	  
+	  <!-- About -->
+	  <section id="about" class="home-section bg-white">
+		<div class="container">
+			  <div class="row">
+				  <div class="col-md-offset-2 col-md-8">
+					<div class="section-heading">
+					 <h2>About us</h2>
+					 <p>We are a team of commited freshmen attending Monta Vista High School in Cupertino, California</p>
+					</div>
+				  </div>
+			  </div>
+			  <div class="row">
+                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+					<div class="box-team wow bounceInDown" data-wow-delay="0.1s">
+                    <img src="img/team/2.jpg" height="500" width="1000"  alt="" class="img-responsive" />
+                    <h4>Adithya E</h4>
+                    <p></p>
+					</div>
+                </div>
+                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4" data-wow-delay="0.1s">
+					<div class="box-team wow bounceInDown">
+                    <img src="img/team/newe1.jpg" height="1500" width="1000" alt="" class="img-responsive" />
+                    <h4>Sameer K</h4>
+                    <p></p>
+					</div>
+                </div>
+                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4" data-wow-delay="0.6s">
+					<div class="box-team wow bounceInDown">
+                    <img src="img/team/3.jpg" height="1500" width="1000"  alt="" class="img-responsive" />
+                    <h4>Pragya P</h4>
+                    <p></p>
+					</div>
+                </div>
+					</div>
+                </div>
+			  </div>			  
+		  </div>	  
+	  </section>
+	  
+
+
+
+
+
+
+
+
+
+<hr>
+
+	  <section id="conserve" class="home-section bg-white">
+		<div class="container">
+			  <div class="row">
+				  <div class="col-md-offset-2 col-md-8">
+					<div class="section-heading">
+					 <h2>10 Ways to Conserve Water</h2>
+					 <p>Our 10 favorite ways to save water in your home!</p>
+					</div>
+				  </div>
+			  </div>
+			  <div class="row">
+                    <img src="img/team/water.jpg" alt="Water Saving Tips" style="margin: 0 auto;" class="img-responsive text-center" align="center"/>
+                    <h2>Want More Tips!</h2>
+                    <a href="http://www.sydneywaternews.com.au/wp-content/uploads/2014/01/waterwisegarden.jpg">Click here!</a>
 			</div>
+                </div>
+					</div>
+                </div>
+			  </div>			  
+		  </div>	  
+	  </section>
+	  
+
+
+<hr>
+
+
+		<section id="interview" class="home-section spacer">	
+           <div class="container">
+
+<img src="img/mark.png" alt="Mark Santoro" style="width:500px;height:400px" align="left">
+<h2 style="text-align:center;">
+We interviewed Mark Santoro, a city council member of Cupertino.  Mr. Santoro was the Cupertino mayor from 2008-2012. Hear the interview below!</h2>
+
+<audio src="Mark Santoro1.m4a" controls>	
+	<embed 
+	src="Mark Santoro.m4a"
+	width="180"
+	height="90"
+	loop="false"
+	autostart="false" />
+</audio>
+
+				<div class="row">
+					<div class="col-md-12">
+						<div class="color-dark">
+							
+						</div>
+					</div>				
+				</div>
+            </div>
+		</section>	  
+	
+
+
+
+
+
+
+
+		<!-- spacer -->	  
+		<section id="spacer1" class="home-section spacer">	
+           <div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="color-light">
+						<h2 class="wow bounceInDown" data-wow-delay="1s">Saving Water Everyday!</h2>
+						<p class="lead wow bounceInUp" data-wow-delay="2s">One gallon at a time!</p>	
+						</div>
+					</div>				
+				</div>
+            </div>
+		</section>	  
+	
+	
+
+	 <!-- Contact -->
+	  <section id="contact" class="home-section bg-white">
+	  	<div class="container">
+			  <div class="row">
+				  <div class="col-md-offset-2 col-md-8">
+					<div class="section-heading">
+					 <h2>Contact us</h2>
+					 <p>Contact via form below and we will be get in touch with you within 24 hours. </p>
+					</div>
+				  </div>
+			  </div>
+
+	  		<div class="row">
+	  			<div class="col-md-offset-1 col-md-10">
+
+				<form class="form-horizontal" role="form">
+				  <div class="form-group">
+					<div class="col-md-offset-2 col-md-8">
+					  <input type="text" class="form-control" id="inputName" placeholder="Name">
+					</div>
+				  </div>
+				  <div class="form-group">
+					<div class="col-md-offset-2 col-md-8">
+					  <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+					</div>
+				  </div>
+				  <div class="form-group">
+					<div class="col-md-offset-2 col-md-8">
+					  <input type="text" class="form-control" id="inputSubject" placeholder="Subject">
+					</div>
+				  </div>
+				  <div class="form-group">
+					<div class="col-md-offset-2 col-md-8">
+					  <textarea name="message" class="form-control" rows="3" placeholder="Message"></textarea>
+					</div>
+				  </div>
+				  <div class="form-group">
+					<div class="col-md-offset-2 col-md-8">
+					 <a href="mailto:sameerskapur@gmail.com"><button type="button" class="btn btn-theme btn-lg btn-block">Send message</button></a>
+					</div>
+				  </div>
+				</form>
+	
+	  			</div>
 			
-			<div class="row featurette">
-				<div class="col-md-7">
-					<h2 class="featurette-heading">NXT<span class="text-muted"> An invaluable kit to learn engineering.</span></h2>
-					<p class="lead">The NXT 2.0 was developed by LEGO in 2009, and since then, it has been helping kids learn about the process of engineering.  Lego Mindstorms NXT 2.0 combines the unlimited versatility of the Lego building system with an intelligent microcomputer brick and intuitive drag-and-drop programming software. We use it to demonstrate different engineering principles.</p>
-				</div>
-				<div class="col-md-5">
-					<img class="featurette-image img-responsive" src="images/nxt.jpg">
-				</div>	
+				
+	  		</div>
+			<div class="row mar-top30 ">
+				<div class="col-md-offset-2 col-md-8">
+					<h5>We're on social networks</h5>
+					<ul class="social-network">
+						<li><a href="https://www.youtube.com/watch?v=nD6uifbpaCY&feature=youtu.be">
+						<span class="fa-stack fa-2x">
+							<i class="fa fa-circle fa-stack-2x"></i>
+							<i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+						</span></a>
+						</li>
+						<li><a href="https://www.youtube.com/watch?v=nD6uifbpaCY&feature=youtu.be">
+						<span class="fa-stack fa-2x">
+							<i class="fa fa-circle fa-stack-2x"></i>
+							<i class="fa fa-dribbble fa-stack-1x fa-inverse"></i>
+						</span></a>
+						</li>
+						<li><a href="https://www.youtube.com/watch?v=nD6uifbpaCY&feature=youtu.be">
+						<span class="fa-stack fa-2x">
+							<i class="fa fa-circle fa-stack-2x"></i>
+							<i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+						</span></a>
+						</li>
+						<li><a href="https://www.youtube.com/watch?v=nD6uifbpaCY&feature=youtu.be">
+						<span class="fa-stack fa-2x">
+							<i class="fa fa-circle fa-stack-2x"></i>
+							<i class="fa fa-pinterest fa-stack-1x fa-inverse"></i>
+						</span></a>
+						</li>
+					</ul>
+				</div>				
 			</div>
 
-			<hr class="featurette-divider">
+	  	</div>
+	  </section>  
 
-			<div style="position:relative;">
-				<a id="battlebots" name="battlebots" style="position:absolute; top:-90px;"></a>
-			</div>
-			<div class="row featurette">
-				<div class="col-md-5">
-					<img class="featurette-image img-responsive" src="images/Battle-bots.jpg" alt="Battle-bots">
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<p>Copyright &copy;2014 The Water Conservation Team. All rights reserved.</p>
 				</div>
-				<div class="col-md-7">
-					<h2 class="featurette-heading">Battle Bots<!-- <span class="text-muted"></span> --></h2>
-					<p class="lead">BattleBots is an educational program created by the producers of the wildly successful BattleBots television series (in which homemade, remote controlled robots face-off in competition). As the television show grew in popularity, so did the number of student fans who wanted to build competitive robots of their own. It soon became evident that this activity, the sport of robots in competition, had the unique potential to impact middle school, high school and college students in a powerful and positive way: Through the process of robot building, student's imaginations are captured as they design, build and compete with their own robotic creations; and through this hands-on effort students gain practical knowledge of math, science, engineering and manufacturing.</p> 
-
-				</div>
-			</div>
-
-			<hr class="featurette-divider">
-
-			<div style="position:relative;">
-				<a id="signup" name="signup" style="position:absolute; top:-83px;"></a>
-			</div>
-			
-			<div class="row featurette">
-				<div class="col-md-7">
-					<h2 class="featurette-heading">Want to sign up?<span class="text-muted"> Spots are filling up fast!</span></h2>
-					<p class="lead">You can download the enrollment form from <a href="https://www.icloud.com/iw/#pages/BAKkTJcdSg7G-ODX4MGBwlIvclXu5mK4RDKF/Summer_Camp_Registration_Form">here</a>. Please print it out, fill out this form, attach a check, a send it to 1228 Yorkshire Drive Cupertino, CA, 95014.  Detailed instructions are on the enrollment form.  For any questions or comments, please email us  at <a href="mailto:futureengineerscamp@gmail.com">futureengineerscamp@gmail.com</a>.  Hope to see you there!</p>
-				</div>
-				<div class="col-md-5">
-					<a href="#">
-					<img class="featurette-image img-responsive" src="images/Enroll-now.png" width="320px" height="320px" alt="Enroll Now">
-					</a>
-				</div>
-			</div>
-			
-			<hr class="featurette-divider">
-
-			<!-- /END THE FEATURETTES -->
-
-
-			<!-- FOOTER -->
-			<footer>
-				<p class="pull-right"><a href="#">Back to top</a></p>
-				<p>&copy; 2014 Future Engineers <br/>
-				 Website Designed and Coded by Sameer and Aashish Kapur
-				 <div class="visitor-count">Number of visitors to this page so far: 5,497</div>
-			</footer>
-
-		</div><!-- /.container -->
-
-
-		<!-- Bootstrap core JavaScript
-		================================================== -->
-		<!-- Placed at the end of the document so the pages load faster -->
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-		<script src="bootstrap/js/bootstrap.min.js"></script>
-		<script src="js/docs.min.js"></script>
-		<script src="js/scroll.js"></script>
-	</body>
+			</div>		
+		</div>	
+	</footer>
+	 
+	 <!-- js -->
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.smooth-scroll.min.js"></script>
+	<script src="js/jquery.dlmenu.js"></script>
+	<script src="js/wow.min.js"></script>
+	<script src="js/custom.js"></script>
+  	
 </html>
