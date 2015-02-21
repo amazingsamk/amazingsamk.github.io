@@ -30,7 +30,7 @@
     	color: black;
 
     }
-    .button-text:hover{
+    .button-text:hover, .button-text:focus{
     	text-decoration: underline;
     	color: black;
     	font-weight: 500;
@@ -40,6 +40,23 @@
     	background-color: #1abd9c;
     	border-color: #1abd9c;
     }
+/*white background, green text*/
+
+	.inverse-button-text{
+		background-color: white;
+		border: none;
+		color: #1abd9c;
+		border-radius: 0;
+
+	}
+
+	.inverse-button-text:hover, .inverse-button-text:focus{
+		background-color: white;
+		border: none;
+		color: #1abd9c;
+		
+	}
+
 
     </style>
   </head>
@@ -207,7 +224,8 @@
 			<div class="row centered">
 				<div class="col-lg-8 col-lg-offset-2">
 					<h4>WE ARE MAKERS. WE INSPIRE MAKERS.</h4>
-					<h2>SIGN UP NOW BUTTON GOES HERE</h2>
+					<br/>
+					<a href="#" class="btn btn-lg btn-primary inverse-button-text">SIGN UP NOW</a>
 				</div>
 			</div><!-- row -->
 		</div><!-- container -->
@@ -221,7 +239,7 @@
 				<a href="#"><i class="fa fa-twitter"></i></a>
 				<a href="#"><i class="fa fa-facebook"></i></a>
 				<a href="#"><i class="fa fa-envelope-o"> </i></a>
-				<p>© 2014 Future Engineers </p>
+				<p>&copy; 2014 Future Engineers </p>
 				<a href="#">Back to top</a>
 		
 			</div><!-- row -->
