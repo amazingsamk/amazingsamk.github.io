@@ -210,6 +210,10 @@ a:after {
 	letter-spacing: 2px;
 	text-transform: uppercase;
 }
+#headerwrap h4 {
+  color: white;
+  font-weight: 700;
+  }
 
 /* Dark Grey Wrap */
 #dg {
