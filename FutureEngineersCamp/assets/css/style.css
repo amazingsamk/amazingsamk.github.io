@@ -12,7 +12,7 @@
 #sign-up-button{
 	background-color: #1abd9c;
 	border-color: #1abd9c;
-			border-radius: 0;
+	border-radius: 0;
 
 }
 /*white background, green text*/
@@ -31,6 +31,13 @@
 	color: #1abd9c;
 	
 }
+.reg-text{
+	font-family: "Raleway";
+	font-weight: 500;
+	color: white;
+	font-size: 26px;
+	margin-bottom: 15px;
+}
 
 #email-input{
 	border-radius: 0;
@@ -42,6 +49,7 @@
 }
 
 #submit{
+	margin-left: 4px;
 	border: none none !important;
 	font-size: 16px;
 
@@ -50,3 +58,30 @@
 
 	/*border-width: none;*/
 }
+
+.signup-button{
+	font-size: 16px;
+	line-height: 1.75;
+	height: 40px;
+	background-color: #1abd9c;
+	border: thin solid white;
+	color: white;
+	border-radius: 0;
+	/*transition: all 0.45s ease 0s;*/
+	transition: all 200ms ease-out;
+}
+
+.signup-button:hover, .signup-button:focus{
+	background-color: white;
+	color: #1abd9c;
+	/*transform: rotate(180deg);*/
+
+}
+
+green background
+white thin border
+white text
+
+on hover
+	-white background
+	-green text
