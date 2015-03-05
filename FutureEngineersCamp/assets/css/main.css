@@ -13,6 +13,29 @@
 
 /* OVERALL ASPECT */
 
+h4.uppercase {
+    text-transform: uppercase;
+}
+
+h4.lowercase {
+    text-transform: lowercase;
+}
+
+h4.capitalize {
+    text-transform: capitalize;
+}
+
+p.uppercase {
+    text-transform: uppercase;
+}
+
+p.lowercase {
+    text-transform: lowercase;
+}
+
+p.capitalize {
+    text-transform: capitalize;
+}
 
 .btn-primary {
   color: #ffffff;
