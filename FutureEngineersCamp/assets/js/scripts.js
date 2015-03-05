@@ -10,7 +10,7 @@ $(document).ready(function() {
 			$.ajax({
 				type: "POST",
 				data: data,
-				url:"addEmailsMailChimp.php",
+				url:"assets/php/addEmailsMailChimp.php",
 				success:function(result)
 				{
 					console.log(result);
@@ -22,6 +22,7 @@ $(document).ready(function() {
 	}
 
 	$("#submit").click(function(e) {
+		// alert("a");
 		e.preventDefault();
 		sendEmails();
 	});
