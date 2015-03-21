@@ -13,6 +13,12 @@
 
 /* OVERALL ASPECT */
 
+img {
+display: inline-block;
+height: auto;
+max-width: 100%;
+}
+
 h4.uppercase {
     text-transform: uppercase;
 }
