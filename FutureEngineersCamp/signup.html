@@ -18,7 +18,7 @@
 	<!-- Custom styles for this template -->
 	<link href="assets/css/main.css" rel="stylesheet">
 
-    <link rel="shortcut icon" href="favicon.ico">
+	<link rel="shortcut icon" href="favicon.ico">
 
 
 	<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -26,7 +26,7 @@
 	  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
 	  <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
 	<![endif]-->
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
 	<style type="text/css">
 
@@ -34,7 +34,16 @@
 		background-color: rgb(224,224,224);
 		min-height: 100px;
 		/*width: 100%;*/
+		font-family: 'Lato';
+		font-weight: 400;
+		width: 85%;
+		margin: 0 auto;
 	}
+
+	#form-container h1, #form-container p{
+		font-family: 'Lato';
+	}
+
 
 
 	</style>
@@ -82,11 +91,36 @@
 
 	<div id="form-container">
 		<h1>Sign up here:</h1>
-		<form id="checkout" method="post" action="/checkout">
-		  <div id="dropin"></div>
-		  <input type="submit" value="Pay $10">
+		<form class="form-horizontal" role="form">
+		   <div class="form-group">
+		      <label for="firstname" class="col-sm-2 control-label">First Name</label>
+		      <div class="col-sm-10">
+		         <input type="text" class="form-control" id="firstname" 
+		            placeholder="Enter First Name">
+		      </div>
+		   </div>
+		   <div class="form-group">
+		      <label for="lastname" class="col-sm-2 control-label">Last Name</label>
+		      <div class="col-sm-10">
+		         <input type="text" class="form-control" id="lastname" 
+		            placeholder="Enter Last Name">
+		      </div>
+		   </div>
+		   <div class="form-group">
+		      <div class="col-sm-offset-2 col-sm-10">
+		         <div class="checkbox">
+		            <label>
+		               <input type="checkbox"> Remember me
+		            </label>
+		         </div>
+		      </div>
+		   </div>
+		   <div class="form-group">
+		      <div class="col-sm-offset-2 col-sm-10">
+		         <button type="submit" class="btn btn-default">Sign in</button>
+		      </div>
+		   </div>
 		</form>
-
 	</div>
 
 	<!-- FOOTER -->
@@ -121,7 +155,7 @@
 						(408) 805-1733<br/>
 						Email: <a href="mailto:contact@futureengineerscamp.com">contact@futureengineerscamp.com</a>
 					</p>
-							        	<img class="featurette-image img-responsive" src="assets/img/logo.png"
+										<img class="featurette-image img-responsive" src="assets/img/logo.png"
 
 				</div>
 		  </div>
@@ -151,7 +185,7 @@
 	braintree.setup(
   "eyJ2ZXJzaW9uIjoyLCJhdXRob3JpemF0aW9uRmluZ2VycHJpbnQiOiI3N2QxYjZhZTk2MDNiNjRmNTEzZWE2ZWYyZWYzN2ExMTYyNTA0YmNmMzQ4Mjk1ODNjNTNjOTgzMzc2OWRjNzE5fGNyZWF0ZWRfYXQ9MjAxNS0wMy0yOVQwNDo0MTo1Ni41MTY4NzQzNTgrMDAwMFx1MDAyNm1lcmNoYW50X2lkPWRjcHNweTJicndkanIzcW5cdTAwMjZwdWJsaWNfa2V5PTl3d3J6cWszdnIzdDRuYzgiLCJjb25maWdVcmwiOiJodHRwczovL2FwaS5zYW5kYm94LmJyYWludHJlZWdhdGV3YXkuY29tOjQ0My9tZXJjaGFudHMvZGNwc3B5MmJyd2RqcjNxbi9jbGllbnRfYXBpL3YxL2NvbmZpZ3VyYXRpb24iLCJjaGFsbGVuZ2VzIjpbXSwiY2xpZW50QXBpVXJsIjoiaHR0cHM6Ly9hcGkuc2FuZGJveC5icmFpbnRyZWVnYXRld2F5LmNvbTo0NDMvbWVyY2hhbnRzL2RjcHNweTJicndkanIzcW4vY2xpZW50X2FwaSIsImFzc2V0c1VybCI6Imh0dHBzOi8vYXNzZXRzLmJyYWludHJlZWdhdGV3YXkuY29tIiwiYXV0aFVybCI6Imh0dHBzOi8vYXV0aC52ZW5tby5zYW5kYm94LmJyYWludHJlZWdhdGV3YXkuY29tIiwiYW5hbHl0aWNzIjp7InVybCI6Imh0dHBzOi8vY2xpZW50LWFuYWx5dGljcy5zYW5kYm94LmJyYWludHJlZWdhdGV3YXkuY29tIn0sInRocmVlRFNlY3VyZUVuYWJsZWQiOnRydWUsInRocmVlRFNlY3VyZSI6eyJsb29rdXBVcmwiOiJodHRwczovL2FwaS5zYW5kYm94LmJyYWludHJlZWdhdGV3YXkuY29tOjQ0My9tZXJjaGFudHMvZGNwc3B5MmJyd2RqcjNxbi90aHJlZV9kX3NlY3VyZS9sb29rdXAifSwicGF5cGFsRW5hYmxlZCI6dHJ1ZSwicGF5cGFsIjp7ImRpc3BsYXlOYW1lIjoiQWNtZSBXaWRnZXRzLCBMdGQuIChTYW5kYm94KSIsImNsaWVudElkIjpudWxsLCJwcml2YWN5VXJsIjoiaHR0cDovL2V4YW1wbGUuY29tL3BwIiwidXNlckFncmVlbWVudFVybCI6Imh0dHA6Ly9leGFtcGxlLmNvbS90b3MiLCJiYXNlVXJsIjoiaHR0cHM6Ly9hc3NldHMuYnJhaW50cmVlZ2F0ZXdheS5jb20iLCJhc3NldHNVcmwiOiJodHRwczovL2NoZWNrb3V0LnBheXBhbC5jb20iLCJkaXJlY3RCYXNlVXJsIjpudWxsLCJhbGxvd0h0dHAiOnRydWUsImVudmlyb25tZW50Tm9OZXR3b3JrIjp0cnVlLCJlbnZpcm9ubWVudCI6Im9mZmxpbmUiLCJ1bnZldHRlZE1lcmNoYW50IjpmYWxzZSwiYnJhaW50cmVlQ2xpZW50SWQiOiJtYXN0ZXJjbGllbnQiLCJtZXJjaGFudEFjY291bnRJZCI6InN0Y2gybmZkZndzenl0dzUiLCJjdXJyZW5jeUlzb0NvZGUiOiJVU0QifSwiY29pbmJhc2VFbmFibGVkIjp0cnVlLCJjb2luYmFzZSI6eyJjbGllbnRJZCI6IjExZDI3MjI5YmE1OGI1NmQ3ZTNjMDFhMDUyN2Y0ZDViNDQ2ZDRmNjg0ODE3Y2I2MjNkMjU1YjU3M2FkZGM1OWIiLCJtZXJjaGFudEFjY291bnQiOiJjb2luYmFzZS1kZXZlbG9wbWVudC1tZXJjaGFudEBnZXRicmFpbnRyZWUuY29tIiwic2NvcGVzIjoiYXV0aG9yaXphdGlvbnM6YnJhaW50cmVlIHVzZXIiLCJyZWRpcmVjdFVybCI6Imh0dHBzOi8vYXNzZXRzLmJyYWludHJlZWdhdGV3YXkuY29tL2NvaW5iYXNlL29hdXRoL3JlZGlyZWN0LWxhbmRpbmcuaHRtbCJ9LCJtZXJjaGFudElkIjoiZGNwc3B5MmJyd2RqcjNxbiIsInZlbm1vIjoib2ZmbGluZSIsImFwcGxlUGF5Ijp7InN0YXR1cyI6Im1vY2siLCJjb3VudHJ5Q29kZSI6IlVTIiwiY3VycmVuY3lDb2RlIjoiVVNEIiwibWVyY2hhbnRJZGVudGlmaWVyIjoibWVyY2hhbnQuY29tLmJyYWludHJlZXBheW1lbnRzLmRldi1kY29wZWxhbmQiLCJzdXBwb3J0ZWROZXR3b3JrcyI6WyJ2aXNhIiwibWFzdGVyY2FyZCIsImFtZXgiXX19",
   'dropin', {
-    container: 'dropin'
+	container: 'dropin'
   });</script>
 
 	<script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
