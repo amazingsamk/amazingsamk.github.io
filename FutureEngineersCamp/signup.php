@@ -95,7 +95,7 @@
 			<div class="row centered">
 				<a href="https://plus.google.com/u/0/b/109071636393641234553/109071636393641234553"><i class="fa fa-google-plus"></i></a>
 				<a href="https://www.facebook.com/pages/Future-Engineers-Summer-Camp/1401478953497544?sk=timeline"><i class="fa fa-facebook"></i></a>
-<a data-toggle="modal" data-target="#myModal" href="#myModal"><i class="fa fa-envelope-o"></i></a>				<p>© 2015 Future Engineers </p>
+				<a data-toggle="modal" data-target="#myModal" href="#myModal"><i class="fa fa-envelope-o"></i></a>				<p>© 2015 Future Engineers </p>
 
 				<a href="#">Back to top</a>
 		
