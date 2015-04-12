@@ -112,19 +112,26 @@
 
 			<!-- Text input-->
 			<div class="form-group">
-			  <label class="col-md-4 control-label" for="textinput">Student Name</label>  
+			  <label class="col-md-4 control-label" for="textinput">Student's First Name</label>  
 			  <div class="col-md-4">
-			  <input id="textinput" name="textinput" type="text" placeholder="First Last" class="form-control input-md" required="">
-				
+			  <input id="textinput" name="textinput" type="text" placeholder="" class="form-control input-md" required="">
 			  </div>
 			</div>
+
+			<div class="form-group">
+			  <label class="col-md-4 control-label" for="textinput">Student's Last Name</label>  
+			  <div class="col-md-4">
+			  <input id="textinput" name="textinput" type="text" placeholder="" class="form-control input-md" required="">
+			  </div>
+			</div>
+
 
 			<!-- Multiple Radios (inline) -->
 			<div class="form-group">
 			  <label class="col-md-4 control-label" for="radios">Gender</label>
 			  <div class="col-md-4"> 
 				<label class="radio-inline" for="radios-0">
-				  <input type="radio" name="radios" id="radios-0" value="1" checked="checked">
+				  <input type="radio" name="radios" id="radios-0" value="1">
 				  Male
 				</label> 
 				<label class="radio-inline" for="radios-1">
@@ -139,12 +146,13 @@
 			  <label class="col-md-4 control-label" for="selectbasic">Grade in Fall 2015</label>
 			  <div class="col-md-4">
 				<select id="selectbasic" name="selectbasic" class="form-control">
-				  <option value="1">3rd</option>
-				  <option value="2">4th</option>
-				  <option value="3">5th</option>
-				  <option value="4">6th</option>
-				  <option value="5">7th</option>
-				  <option value="6">8th</option>
+				  <option value="1">--</option>
+				  <option value="">3rd</option>
+				  <option value="">4th</option>
+				  <option value="">5th</option>
+				  <option value="">6th</option>
+				  <option value="">7th</option>
+				  <option value="">8th</option>
 				</select>
 			  </div>
 			</div>
@@ -154,7 +162,6 @@
 			  <label class="col-md-4 control-label" for="textinput">Student DOB</label>  
 			  <div class="col-md-4">
 			  <input id="textinput" name="textinput" type="text" placeholder="MM/DD/YYYY" class="form-control input-md" required="">
-			  <span class="help-block">MM/DD/YYYY</span>  
 			  </div>
 			</div>
 
@@ -162,7 +169,7 @@
 			<div class="form-group">
 			  <label class="col-md-4 control-label" for="textinput">School</label>  
 			  <div class="col-md-4">
-			  <input id="textinput" name="textinput" type="text" placeholder="School" class="form-control input-md" required="">
+			  <input id="textinput" name="textinput" type="text" placeholder="" class="form-control input-md" required="">
 				
 			  </div>
 			</div>
@@ -190,7 +197,7 @@
 			  <label class="col-md-4 control-label" for="textinput">Home Address</label>  
 			  <div class="col-md-4">
 			  <input id="textinput" name="textinput" type="text" placeholder="Street Address" class="form-control input-md" required="">
-			  <span class="help-block">Street Address</span>  
+			  <!-- <span class="help-block">Street Address</span>   -->
 			  </div>
 			</div>
 
@@ -199,7 +206,7 @@
 			  <label class="col-md-4 control-label" for="textinput"></label>  
 			  <div class="col-md-4">
 			  <input id="textinput" name="textinput" type="text" placeholder="City" class="form-control input-md" required="">
-			  <span class="help-block">City</span>  
+			  <!-- <span class="help-block">City</span>   -->
 			  </div>
 			</div>
 
@@ -208,7 +215,7 @@
 			  <label class="col-md-4 control-label" for="textinput"></label>  
 			  <div class="col-md-4">
 			  <input id="textinput" name="textinput" type="text" placeholder="Zip Code" class="form-control input-md" required="">
-			  <span class="help-block">Postal/ Zip code</span>  
+			  <!-- <span class="help-block">Postal/ Zip code</span>   -->
 			  </div>
 			</div>
 
@@ -217,7 +224,7 @@
 			  <label class="col-md-4 control-label" for="textinput"></label>  
 			  <div class="col-md-4">
 			  <input id="textinput" name="textinput" type="text" placeholder="State" class="form-control input-md">
-			  <span class="help-block">State</span>  
+			  <!-- <span class="help-block">State</span>   -->
 			  </div>
 			</div>
 
@@ -313,7 +320,7 @@
 
 			<!-- Textarea -->
 			<div class="form-group">
-			  <label class="col-md-4 control-label" for="textarea">How Did You Hear About Our Camp?</label>
+			  <label class="col-md-4 control-label" for="textarea">How did you hear about our camp?</label>
 			  <div class="col-md-4">                     
 				<textarea class="form-control" id="textarea" name="textarea"></textarea>
 			  </div>
@@ -328,37 +335,38 @@
 			  </div>
 			</div>
 
-
-			<h3 class="text-center">Waiver and Release/Acceptance of Policies</h3>
-
-			<p> I represent that I am the parent or legal guardian of the above individual and hereby consent to the individual participating in the activities sponsored by the Future Engineers Summer Camp.   I agree to indemnify, hold harmless and defend the Future Engineers Summer Camp instructors and other released parties from and against any loss, damage, liability and expense, including costs and attorneys' fees, incurred by the Future Engineers Summer Camp or other released parties as a result of the above individual participating in activities involving Future Engineers Summer Camp.
-			<br>
-			We reserve the right to use any photograph/video taken during the camp for promotional materials, brochure, and web-site.
-			<br>
-			We reserve the right to cancel any camp not meeting enrollment standards in which case a full refund will be given.
-			 </p>
-
+			<div>
+				<h3 class="text-center">Waiver and Release/Acceptance of Policies</h3>
+				<p class="text-center">
+					I represent that I am the parent or legal guardian of the above individual and hereby consent to the individual participating in the activities sponsored by the Future Engineers Summer Camp.   I agree to indemnify, hold harmless and defend the Future Engineers Summer Camp instructors and other released parties from and against any loss, damage, liability and expense, including costs and attorneys' fees, incurred by the Future Engineers Summer Camp or other released parties as a result of the above individual participating in activities involving Future Engineers Summer Camp.
+					<br>
+					We reserve the right to use any photograph/video taken during the camp for promotional materials, brochure, and web-site.
+					<br>
+					We reserve the right to cancel any camp not meeting enrollment standards in which case a full refund will be given.
+				</p>
+			</div>
+			
 			<!-- Multiple Checkboxes -->
 			<div class="form-group">
-			  <label class="col-md-4 control-label" for="checkboxes">I Agree</label>
-			  <div class="col-md-4">
-			  <div class="checkbox">
-				<label for="checkboxes-0">
-				  <input type="checkbox" name="checkboxes" id="checkboxes-0" value="1">
-				  I Agree
-				</label>
+				<label class="col-md-4 control-label" for="checkboxes">I Agree</label>
+				<div class="col-md-4">
+					<div class="checkbox">
+						<label for="checkboxes-0">
+							<input type="checkbox" name="checkboxes" id="checkboxes-0" value="">
+							I Agree
+						</label>
+					</div>
 				</div>
-			  </div>
 			</div>
 
 
-			<h3 class="text-center">Total: &nbsp; <strong> $349 </strong> </h3>
+			<h3 class="text-center">Total: $349</h3>
 
 			<!-- Button -->
 			<div class="form-group">
 			  <label class="col-md-4 control-label" for="singlebutton"></label>
 			  <div class="col-md-4">
-				<button id="singlebutton" name="singlebutton" class="btn btn-outlined btn-theme btn-lg" data-wow-delay="0.7s">Pay</button>
+				<button id="singlebutton" name="singlebutton" class="btn btn-outlined btn-theme btn-lg">Pay</button>
 			  </div>
 			</div>
 
