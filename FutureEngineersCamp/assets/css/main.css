@@ -21,7 +21,7 @@
 
 /* Buttons */
 
-.btn {
+.btn2 {
   letter-spacing: 1px;
   text-decoration: none;
   background: none;
@@ -42,53 +42,53 @@
   padding:8px 20px;
 }
 
-.btn-outlined {
+.btn2-outlined {
     border-radius: 0;
     -webkit-transition: all 0.3s;
        -moz-transition: all 0.3s;
             transition: all 0.3s;
 }
 
-.btn-outlined.btn-theme {
+.btn2-outlined.btn2-theme {
     background: none;
     color: #1abd9c;
   border-color: #1abd9c;
 }
 
-.btn-outlined.btn-theme:hover,
-.btn-outlined.btn-theme:active {
+.btn2-outlined.btn2-theme:hover,
+.btn2-outlined.btn2-theme:active {
     color: #FFF;
     background: #1abd9c;
     border-color: #1abd9c;
 }
 
-.btn-outlined.btn-black {
+.btn2-outlined.btn2-black {
     background: none;
     color: #000000;
   border-color: #000000;
 }
 
-.btn-outlined.btn-black:hover,
-.btn-outlined.btn-black:active {
+.btn2-outlined.btn2-black:hover,
+.btn2-outlined.btn2-black:active {
     color: #FFF;
-    background: #000000;
-    border-color: #000000;
+    background: #1abd9c;
+    border-color: #1abd9c;
 }
 
-.btn-outlined.btn-white {
+.btn2-outlined.btn2-white {
     background: none;
     color: #FFFFFF;
   border-color: #FFFFFF;
 }
 
-.btn-outlined.btn-white:hover,
-.btn-outlined.btn-white:active {
+.btn2-outlined.btn2-white:hover,
+.btn2-outlined.btn2-white:active {
     color: #1abd9c;
     background: #FFFFFF;
     border-color: #FFFFFF;
 }
 
-.btn-lg{
+.btn2-lg{
   font-size:18px;
   line-height:22px;
   border: 4px solid;
