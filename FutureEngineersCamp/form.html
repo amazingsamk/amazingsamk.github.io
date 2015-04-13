@@ -29,8 +29,9 @@
 
 	<style type="text/css">
 	#form-div{
-		width: 90%;
+		width: 75%;
 		margin: 0 auto;
+		border: 1px solid black;
 	}
 	</style>
   </head>
@@ -81,67 +82,57 @@
 		<form class="form-horizontal">
 
 			<div class="form-group">
-			  <label class="col-md-4 control-label" for="checkboxes">Select Camp Session</label>
-			  <div class="col-md-4">
-			  <div class="checkbox">
-				<label for="checkboxes-0">
-				  <input type="checkbox" name="checkboxes" id="checkboxes-0" value="1">
-				  June 15-19 (Junior)
-				</label>
+				<label class="col-md-4 control-label" for="radios">Camp Session</label>
+				<div class="col-md-4"> 
+					<label class="radio-inline" for="session-1">
+						<input type="radio" name="radios" id="session-1" value="session-1">
+						June 15-19 (Junior)
+					</label> 
+					<label class="radio-inline" for="session-2">
+						<input type="radio" name="radios" id="session-2" value="session-2">
+						July 6-10 (Beginner)
+					</label>
+					<br/>
+					<label class="radio-inline" for="session-3">
+						<input type="radio" name="radios" id="session-3" value="session-3">
+						July 13-17 (Beginner)
+					</label>
+					<label class="radio-inline" for="session-4">
+						<input type="radio" name="radios" id="session-4" value="session-4">
+						August 3-7 (Advanced)
+					</label>
 				</div>
-			  <div class="checkbox">
-				<label for="checkboxes-1">
-				  <input type="checkbox" name="checkboxes" id="checkboxes-1" value="2">
-				  July 6-10 (Beginner)
-				</label>
-				</div>
-			  <div class="checkbox">
-				<label for="checkboxes-2">
-				  <input type="checkbox" name="checkboxes" id="checkboxes-2" value="3">
-				  July 13-17 (Beginner)
-				</label>
-				</div>
-			  <div class="checkbox">
-				<label for="checkboxes-3">
-				  <input type="checkbox" name="checkboxes" id="checkboxes-3" value="4">
-				  August 3-7 (Advanced)
-				</label>
-				</div>
-			  </div>
-			</div>
-
-			<!-- Text input-->
-			<div class="form-group">
-			  <label class="col-md-4 control-label" for="textinput">Student's First Name</label>  
-			  <div class="col-md-4">
-			  <input id="textinput" name="textinput" type="text" placeholder="" class="form-control input-md" required="">
-			  </div>
 			</div>
 
 			<div class="form-group">
-			  <label class="col-md-4 control-label" for="textinput">Student's Last Name</label>  
-			  <div class="col-md-4">
-			  <input id="textinput" name="textinput" type="text" placeholder="" class="form-control input-md" required="">
-			  </div>
+				<label class="col-md-4 control-label" for="firstName">Student's First Name</label>  
+				<div class="col-md-4">
+					<input id="firstName" type="text" class="form-control">
+				</div>
 			</div>
 
-
-			<!-- Multiple Radios (inline) -->
 			<div class="form-group">
-			  <label class="col-md-4 control-label" for="radios">Gender</label>
-			  <div class="col-md-4"> 
-				<label class="radio-inline" for="radios-0">
-				  <input type="radio" name="radios" id="radios-0" value="1">
-				  Male
-				</label> 
-				<label class="radio-inline" for="radios-1">
-				  <input type="radio" name="radios" id="radios-1" value="2">
-				  Female
-				</label>
-			  </div>
+				<label class="col-md-4 control-label" for="lastName">Student's Last Name</label>  
+				<div class="col-md-4">
+					<input id="lastName" type="text"  class="form-control input-md">
+				</div>
 			</div>
 
-			<!-- Select Basic -->
+
+			<div class="form-group">
+				<label class="col-md-4 control-label" for="radios">Gender</label>
+				<div class="col-md-4"> 
+					<label class="radio-inline" for="radios-0">
+						<input type="radio" name="radios" id="radios-0" value="1">
+						Male
+					</label> 
+					<label class="radio-inline" for="radios-1">
+						<input type="radio" name="radios" id="radios-1" value="2">
+						Female
+					</label>
+				</div>
+			</div>
+
 			<div class="form-group">
 			  <label class="col-md-4 control-label" for="selectbasic">Grade in Fall 2015</label>
 			  <div class="col-md-4">
@@ -157,182 +148,147 @@
 			  </div>
 			</div>
 
-			<!-- Text input-->
 			<div class="form-group">
-			  <label class="col-md-4 control-label" for="textinput">Student DOB</label>  
-			  <div class="col-md-4">
-			  <input id="textinput" name="textinput" type="text" placeholder="MM/DD/YYYY" class="form-control input-md" required="">
-			  </div>
+				<label class="col-md-4 control-label" for="studentDOB">Student DOB</label>  
+				<div class="col-md-4">
+					<input id="studentDOB" type="text" placeholder="MM/DD/YYYY" class="form-control input-md">
+				</div>
 			</div>
 
-			<!-- Text input-->
 			<div class="form-group">
-			  <label class="col-md-4 control-label" for="textinput">School</label>  
-			  <div class="col-md-4">
-			  <input id="textinput" name="textinput" type="text" placeholder="" class="form-control input-md" required="">
-				
-			  </div>
+				<label class="col-md-4 control-label" for="studentSchool">School</label>  
+				<div class="col-md-4">
+					<input id="studentSchool" type="text" class="form-control input-md">
+				</div>
 			</div>
 
 
-			<!-- Text input-->
 			<div class="form-group">
-			  <label class="col-md-4 control-label" for="textinput">Student Email</label>  
-			  <div class="col-md-4">
-			  <input id="textinput" name="textinput" type="text" placeholder="Email" class="form-control input-md">
-				
-			  </div>
+				<label class="col-md-4 control-label" for="studentEmail">Student Email</label>  
+				<div class="col-md-4">
+					<input id="studentEmail" type="text" class="form-control input-md">
+				</div>
 			</div>
 
-			<!-- Textarea -->
 			<div class="form-group">
-			  <label class="col-md-4 control-label" for="textarea">Known Allergies/Concerns/Special Needs</label>
-			  <div class="col-md-4">                     
-				<textarea class="form-control" id="textarea" name="textarea"></textarea>
-			  </div>
+				<label class="col-md-4 control-label" for="studentNeeds">Known Allergies/Concerns/Special Needs</label>
+				<div class="col-md-4">                     
+					<textarea class="form-control" id="studentNeeds"></textarea>
+				</div>
 			</div>
 
-			<!-- Text input-->
 			<div class="form-group">
-			  <label class="col-md-4 control-label" for="textinput">Home Address</label>  
-			  <div class="col-md-4">
-			  <input id="textinput" name="textinput" type="text" placeholder="Street Address" class="form-control input-md" required="">
-			  <!-- <span class="help-block">Street Address</span>   -->
-			  </div>
+				<label class="col-md-4 control-label" for="studentStreet">Street Address</label>  
+				<div class="col-md-4">
+					<input id="studentStreet" type="text" class="form-control input-md">
+				</div>
 			</div>
 
-			<!-- Text input-->
 			<div class="form-group">
-			  <label class="col-md-4 control-label" for="textinput"></label>  
-			  <div class="col-md-4">
-			  <input id="textinput" name="textinput" type="text" placeholder="City" class="form-control input-md" required="">
-			  <!-- <span class="help-block">City</span>   -->
-			  </div>
+				<label class="col-md-4 control-label" for="studentCity">City</label>  
+				<div class="col-md-4">
+					<input id="studentCity" type="text" class="form-control input-md">
+				</div>
 			</div>
 
-			<!-- Text input-->
 			<div class="form-group">
-			  <label class="col-md-4 control-label" for="textinput"></label>  
-			  <div class="col-md-4">
-			  <input id="textinput" name="textinput" type="text" placeholder="Zip Code" class="form-control input-md" required="">
-			  <!-- <span class="help-block">Postal/ Zip code</span>   -->
-			  </div>
+				<label class="col-md-4 control-label" for="studentState">State</label>  
+				<div class="col-md-4">
+					<input id="studentState" type="text" class="form-control input-md">
+				</div>
 			</div>
 
-			<!-- Text input-->
 			<div class="form-group">
-			  <label class="col-md-4 control-label" for="textinput"></label>  
-			  <div class="col-md-4">
-			  <input id="textinput" name="textinput" type="text" placeholder="State" class="form-control input-md">
-			  <!-- <span class="help-block">State</span>   -->
-			  </div>
+				<label class="col-md-4 control-label" for="studentZip">Zip Code</label>  
+				<div class="col-md-4">
+					<input id="studentZip" type="text" class="form-control input-md">
+				</div>
 			</div>
 
-			<!-- Text input-->
 			<div class="form-group">
-			  <label class="col-md-4 control-label" for="textinput">Home Phone Number</label>  
-			  <div class="col-md-4">
-			  <input id="textinput" name="textinput" type="text" placeholder="Phone #" class="form-control input-md" required="">
-				
-			  </div>
+				<label class="col-md-4 control-label" for="homePhone">Home Phone Number</label>  
+				<div class="col-md-4">
+					<input id="homePhone" type="text" class="form-control input-md">
+				</div>
 			</div>
 
-			<!-- Text input-->
 			<div class="form-group">
-			  <label class="col-md-4 control-label" for="textinput">Parent/Guardian 1</label>  
-			  <div class="col-md-4">
-			  <input id="textinput" name="textinput" type="text" placeholder="Name" class="form-control input-md" required="">
-				
-			  </div>
+				<label class="col-md-4 control-label" for="parent1">Name of Parent/Guardian 1</label>  
+				<div class="col-md-4">
+					<input id="parent1" type="text" class="form-control input-md">
+				</div>
 			</div>
 
-			<!-- Text input-->
 			<div class="form-group">
-			  <label class="col-md-4 control-label" for="textinput">Phone Number</label>  
-			  <div class="col-md-4">
-			  <input id="textinput" name="textinput" type="text" placeholder="Phone #" class="form-control input-md" required="">
-				
-			  </div>
+				<label class="col-md-4 control-label" for="parent1Phone">Phone Number</label>  
+				<div class="col-md-4">
+					<input id="parent1Phone" type="text" class="form-control input-md">
+				</div>
 			</div>
 
-			<!-- Text input-->
 			<div class="form-group">
-			  <label class="col-md-4 control-label" for="textinput">Email</label>  
-			  <div class="col-md-4">
-			  <input id="textinput" name="textinput" type="text" placeholder="email@email.com" class="form-control input-md" required="">
-				
-			  </div>
+				<label class="col-md-4 control-label" for="parent1Email">Email</label>  
+				<div class="col-md-4">
+					<input id="parent1Email" type="text" class="form-control input-md">
+				</div>
 			</div>
 
-			<!-- Text input-->
 			<div class="form-group">
-			  <label class="col-md-4 control-label" for="textinput">Parent/Guardian 2</label>  
-			  <div class="col-md-4">
-			  <input id="textinput" name="textinput" type="text" placeholder="Name" class="form-control input-md" required="">
-				
-			  </div>
+				<label class="col-md-4 control-label" for="parent2Name">Parent/Guardian 2</label>  
+				<div class="col-md-4">
+					<input id="parent2Name" type="text" class="form-control input-md">
+				</div>
 			</div>
-			<!-- Text input-->
+
 			<div class="form-group">
-			  <label class="col-md-4 control-label" for="textinput">Phone Number</label>  
-			  <div class="col-md-4">
-			  <input id="textinput" name="textinput" type="text" placeholder="Phone #" class="form-control input-md" required="">
-				
-			  </div>
+				<label class="col-md-4 control-label" for="parent2Phone">Phone Number</label>  
+				<div class="col-md-4">
+					<input id="parent2Phone" type="text" class="form-control input-md">
+				</div>
 			</div>
 
 
-			<!-- Text input-->
 			<div class="form-group">
-			  <label class="col-md-4 control-label" for="textinput">Email</label>  
-			  <div class="col-md-4">
-			  <input id="textinput" name="textinput" type="text" placeholder="email@email.com" class="form-control input-md" required="">
-				
-			  </div>
+				<label class="col-md-4 control-label" for="parent2Email">Email</label>  
+				<div class="col-md-4">
+					<input id="parent2Email" type="text" class="form-control input-md">
+				</div>
 			</div>
 
-			<!-- Textarea -->
 			<div class="form-group">
-			  <label class="col-md-4 control-label" for="textinput">Insurance Provider</label>
-			  <div class="col-md-4">                     
-				<input class="form-control input-md" type="text" id="textinput" placeholder="Insurance Provider" name="textinput">
-			  </div>
+				<label class="col-md-4 control-label" for="insuranceName">Insurance Provider</label>
+				<div class="col-md-4">                     
+					<input class="form-control input-md" type="text" id="insuranceName">
+				</div>
 			</div>
 
 
-			<!-- Text input-->
 			<div class="form-group">
-			  <label class="col-md-4 control-label" for="textinput">Policy Number</label>  
-			  <div class="col-md-4">
-			  <input id="textinput" name="textinput" type="text" placeholder="Policy #" class="form-control input-md" required="">
-				
-			  </div>
+				<label class="col-md-4 control-label" for="insuranceNum">Policy Number</label>  
+				<div class="col-md-4">
+					 <input id="insuranceNum" type="text" class="form-control input-md">		
+				</div>
 			</div>
 
-			<!-- Text input-->
 			<div class="form-group">
-			  <label class="col-md-4 control-label" for="textinput">Subscriber's Name</label>  
-			  <div class="col-md-4">
-			  <input id="textinput" name="textinput" type="text" placeholder="Name" class="form-control input-md" required="">
-				
-			  </div>
+				<label class="col-md-4 control-label" for="subscriber">Subscriber's Name</label>  
+				<div class="col-md-4">
+					 <input id="subscriber" type="text" class="form-control input-md">
+				</div>
 			</div>
 
-			<!-- Textarea -->
 			<div class="form-group">
-			  <label class="col-md-4 control-label" for="textarea">How did you hear about our camp?</label>
-			  <div class="col-md-4">                     
-				<textarea class="form-control" id="textarea" name="textarea"></textarea>
-			  </div>
+				<label class="col-md-4 control-label" for="hear">How did you hear about our camp?</label>
+				<div class="col-md-4">                     
+					<textarea class="form-control" id="hear"></textarea>
+				</div>
 			</div>
 
-			<!-- Textarea -->
 			<div class="form-group">
-			  <label class="col-md-4 control-label" for="textarea">What experience does your child have with LEGO technic, NXT, or power functions?
-			</label>
-			  <div class="col-md-4">                     
-				<textarea class="form-control" id="textarea" name="textarea"></textarea>
-			  </div>
+				<label class="col-md-4 control-label" for="experience">What experience does your child have with LEGO technic, NXT, or power functions?</label>
+				<div class="col-md-4">
+					<textarea class="form-control" id="experience"></textarea>
+				</div>
 			</div>
 
 			<div>
@@ -346,7 +302,6 @@
 				</p>
 			</div>
 			
-			<!-- Multiple Checkboxes -->
 			<div class="form-group">
 				<label class="col-md-4 control-label" for="checkboxes">I Agree</label>
 				<div class="col-md-4">
@@ -362,7 +317,6 @@
 
 			<h3 class="text-center">Total: $349</h3>
 
-			<!-- Button -->
 			<div class="form-group">
 			  <label class="col-md-4 control-label" for="singlebutton"></label>
 			  <div class="col-md-4">
