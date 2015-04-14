@@ -1,3 +1,4 @@
+var radio
 $(document).ready(function(){
 	$(".session").change(function(e){
 		var id = e.target.id;

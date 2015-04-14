@@ -1,0 +1,75 @@
+todo tomorrow 4/12
+
+FIGURE OUT WHERE DATA IS GOING TO
+	-either a sqlDB or firebase, figure out costs
+
+add * next to form inputs for required, code:
+	CSS:
+		red{
+			color: red;
+		}
+	HTML:
+		<label>Title<red>  *</red></label>
+
+Do JS validation using IDs of all elements
+	have to validate email addresses, phone numbers, DOB
+		-maybe have default case be the 1st regex in attached function?
+	make sure that everything else is filled out(except parent2 info)
+	add error class to element
+	copy relavent portions from csf scriptsv2.js
+		-line 155, 158-169 about error checking after initial form check on change of element
+		-doError() classm lines 172-190 that adds error to an input field
+			http://stackoverflow.com/questions/8602947/jquery-addclass-with-bootstrap
+			-use above link and $("#" + id).parent(div.form-group).addClass(errorClass)
+		-lines 235-249 for scrolling to input fields that have errors
+
+	scrolling JS:
+		$('html, body').animate({
+			scrollTop: $("#" + elements[i] + "-label").offset().top
+		}, 1000);
+
+	regex validation function:
+		function validate(id)
+		{
+			switch(id)
+			{
+				case "firstName":
+				case "lastName":
+					return /^[A-Za-z0-9]+$/.test($("#" + id).val());
+					break;
+				case "email":
+					return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test($("#" + id).val());
+					break;
+			}
+			return false;
+			// return regex.test($("#" + id).val());
+		}
+
+look into mandrill for sending confirmation email
+
+
+
+random jquery for dob slashes:
+$("#txtBirthDate").keyup(function (e) {
+	if (e.keyCode != 193 && e.keyCode != 111) {
+		console.log(e.keyCode);
+		if (e.keyCode != 8) {
+			if ($(this).val().length == 2) {
+				$(this).val($(this).val() + "/");
+			} else if ($(this).val().length == 5) {
+				$(this).val($(this).val() + "/");
+			}
+		} else {
+			var temp = $(this).val();
+			if ($(this).val().length == 5) {
+				$(this).val(temp.substring(0, 4));
+			} else if ($(this).val().length == 2) {
+				$(this).val(temp.substring(0, 1));
+			}
+		}
+	} else {
+		var temp = $(this).val();
+		var tam = $(this).val().length;
+		$(this).val(temp.substring(0, tam-1));
+	}
+});

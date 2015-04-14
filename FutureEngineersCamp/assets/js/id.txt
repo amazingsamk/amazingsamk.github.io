@@ -1,0 +1,23 @@
+IDs for form elements:
+firstName
+lastName
+studentDOB
+studentSchool
+studentEmail
+studentNeeds
+	-textarea
+studentStreet
+studentCity
+studentZip
+studentState
+homePhone
+parent1Name
+parent1Phone
+parent1Email
+parent2Name
+parent2Phone
+parent2Email
+insuranceName
+insuranceNum
+hear
+experience
