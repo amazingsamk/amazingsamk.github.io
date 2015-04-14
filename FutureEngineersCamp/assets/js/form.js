@@ -21,21 +21,20 @@ $(document).ready(function(){
 		var elements = 
 		["firstName",
 		"lastName",
-		"grade",
+		// "grade",
 		"studentDOB",
 		"studentSchool",
 		"studentEmail"];
 
-		var check = true;
+		// var check = true;
 		var badElement;
 		for(var i = 0; i < elements.length; i++)
 		{
-			if(!doError(elements[i]) && check)
+			if(!checkForm(elements[i]))
 			{
-				check = false; // not needed?
 				$('html, body').animate({
 					scrollTop: $("#" + elements[i] + "-label").offset().top
-				}, 1000);
+				}, 650);
 				break;
 
 			}
@@ -48,8 +47,35 @@ $(document).ready(function(){
 
 function checkForm()
 {
+	if(!validate(element))
+	{
 
+		return false;
+	}
+	else
+	{
+
+		return true;
+	}
 }
+
+function validate(id)
+{
+	var type = $("#" + id).attr("type");
+	console.log(type);
+	switch(type)
+	{
+		case "text":
+			return /^[A-Za-z0-9]+$/.test($("#" + id).val());
+			break;
+		case "email":
+			return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test($("#" + id).val());
+			break;
+	}
+	return false;
+	// return regex.test($("#" + id).val());
+}
+
 
 function print()
 {
