@@ -18,7 +18,14 @@ $(document).ready(function(){
 	$("#submitButton").click(function(e){
 		e.preventDefault();
 		alert("a");
-		var elements = ["firstName", "lastName", "grade", "studentID", "email"];
+		var elements = 
+		["firstName",
+		"lastName",
+		"grade",
+		"studentDOB",
+		"studentSchool",
+		"studentEmail"];
+
 		var check = true;
 		var badElement;
 		for(var i = 0; i < elements.length; i++)
