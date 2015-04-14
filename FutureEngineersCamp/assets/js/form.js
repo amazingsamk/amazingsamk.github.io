@@ -1,4 +1,4 @@
-var radioStore = {"session":"", "gender":""};
+var radioStore = {"session":"", "gender":"", "shirt":""};
 $(document).ready(function(){
 	$(".radio-group").change(function(e){
 		var id = e.target.id;
@@ -14,8 +14,20 @@ $(document).ready(function(){
 		// $("#" + id).parents("div.form-group").addClass("has-error");
 			// makes form-group have error
 	});
+
+	$("#submitButton").click(function(e){
+		e.preventDefault();
+		alert("a");
+
+
+	});
 });
 
+
+function checkForm()
+{
+	
+}
 
 function print()
 {
