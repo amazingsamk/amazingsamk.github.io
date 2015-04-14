@@ -81,24 +81,26 @@
 	<div id="form-div">
 		<form class="form-horizontal">
 
-			<div class="form-group">
-				<label class="col-md-4 control-label" for="session-1">Camp Session</label>
+			<div class="form-group radio-group">
+				<label class="col-md-4 control-label" for="session">Camp Session</label>
 				<div class="col-md-4 session"> 
-					<label class="radio-inline" for="session-1">
-						<input type="radio" name="radios" id="session-1" value="session-1">
+					<label class="radio-inline" for="jun1519">
+						<input type="radio" name="radio-session" id="jun1519">
 						June 15-19 (Junior)
 					</label> 
-					<label class="radio-inline" for="session-2">
-						<input type="radio" name="radios" id="session-2" value="session-2">
+					<label class="radio-inline" for="jul0610">
+						<input type="radio" name="radio-session" id="jul0610">
 						July 6-10 (Beginner)
 					</label>
+
 					<br/>
-					<label class="radio-inline" for="session-3">
-						<input type="radio" name="radios" id="session-3" value="session-3">
+					
+					<label class="radio-inline" for="jul1317">
+						<input type="radio" name="radio-session" id="jul1317">
 						July 13-17 (Beginner)
 					</label>
-					<label class="radio-inline" for="session-4">
-						<input type="radio" name="radios" id="session-4" value="session-4">
+					<label class="radio-inline" for="aug0307">
+						<input type="radio" name="radio-session" id="aug0307">
 						August 3-7 (Advanced)
 					</label>
 				</div>
@@ -119,24 +121,24 @@
 			</div>
 
 
-			<div class="form-group">
-				<label class="col-md-4 control-label" for="radios">Gender</label>
-				<div class="col-md-4"> 
-					<label class="radio-inline" for="radios-0">
-						<input type="radio" name="radios" id="radios-0" value="1">
+			<div class="form-group radio-group">
+				<label class="col-md-4 control-label" for="gender">Gender</label>
+				<div class="col-md-4 gender"> 
+					<label class="radio-inline" for="male">
+						<input type="radio" name="radio-gender" id="male" value="male">
 						Male
 					</label> 
-					<label class="radio-inline" for="radios-1">
-						<input type="radio" name="radios" id="radios-1" value="2">
+					<label class="radio-inline" for="female">
+						<input type="radio" name="radio-gender" id="female" value="female">
 						Female
 					</label>
 				</div>
 			</div>
 
 			<div class="form-group">
-				<label class="col-md-4 control-label" for="selectbasic">Grade in Fall 2015</label>
+				<label class="col-md-4 control-label" for="grade">Grade in Fall 2015</label>
 				<div class="col-md-4">
-					<select id="selectbasic" name="selectbasic" class="form-control">
+					<select id="grade" name="grade" class="form-control">
 						<option value="1">--</option>
 						<option value="">3rd</option>
 						<option value="">4th</option>
@@ -177,19 +179,19 @@
 				</div>
 			</div>
 
-			<div class="form-group">
+			<div class="form-group radio-group">
 				<label class="col-md-4 control-label" for="shirt">T-Shirt Size</label>
-				<div class="col-md-4"> 
-					<label class="radio-inline" for="shirt-0">
-						<input type="radio" id="shirt-0" value="1">
+				<div class="col-md-4 shirt"> 
+					<label class="radio-inline" for="small">
+						<input type="radio" name="radio-shirt" id="small" value="small">
 						Small
 					</label> 
-					<label class="radio-inline" for="radios-1">
-						<input type="radio" id="radios-1" value="2">
+					<label class="radio-inline" for="medium">
+						<input type="radio" name="radio-shirt" id="medium" value="medium">
 						Medium
 					</label>
-					<label class="radio-inline" for="radios-0">
-						<input type="radio" id="radios-0" value="1">
+					<label class="radio-inline" for="large">
+						<input type="radio" name="radio-shirt" id="large" value="large">
 						Large
 					</label> 
 				</div>

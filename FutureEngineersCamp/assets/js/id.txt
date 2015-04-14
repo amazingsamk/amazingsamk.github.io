@@ -1,6 +1,7 @@
 IDs for form elements:
 firstName
 lastName
+grade
 studentDOB
 studentSchool
 studentEmail
