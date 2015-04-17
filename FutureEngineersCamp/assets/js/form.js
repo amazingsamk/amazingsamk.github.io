@@ -18,58 +18,49 @@ $(document).ready(function(){
 	$("#submitButton").click(function(e){
 		e.preventDefault();
 		// alert("a");
-		var elements = 
-		["firstName",
-		"lastName",
-		"studentDOB",
-		"studentSchool",
-		"studentEmail"];
+		// var elements = 
+		// ["firstName",
+		// "lastName",
+		// "studentDOB",
+		// "studentSchool",
+		// "studentEmail"];
 
 		var allElements = 
-		{
-			"session":"radio",
-			"firstName":"text",
-			"lastName":"text",
-			"gender":"radio",
-			"grade":"select",
-			"studentDOB":"dob",
-			"studentSchool":"text",
-			"studentEmail":"email",
-			"shirt":"radio",
-			"studentStreet":"text",
-			"studentCity":"text",
-			"studentState":"text",
-			"studentZip":"text",
-			"homePhone":"phone",
-			"parent1Name":"text",
-			"parent1Phone":"phone",
-			"parent1Email":"email"
+		[
+			["session","radio"],
+			["firstName","text"],
+			["lastName","text"],
+			["gender","radio"],
+			["grade","select"],
+			["studentDOB","dob"],
+			["studentSchool","text"],
+			["studentEmail","email"],
+			["shirt","radio"],
+			["studentStreet","text"],
+			["studentCity","text"],
+			["studentState","text"],
+			["studentZip","number-zip"],
+			["homePhone","phone"],
+			["parent1Name","text"],
+			["parent1Phone","phone"],
+			["parent1Email","email"]
+		];
 
-		};
 
-studentStreet
-studentCity
-studentState
-studentZip
-
-homePhone:phone
-parent1Name
-parent1Phone:phone
-parent1Email:email
 
 		var check = true;
 		var badElement;
-		for(var i = 0; i < elements.length; i++)
+		for(var i = 0; i < allElements.length; i++)
 		{
-			console.log(elements[i]);
-			if(!checkForm(elements[i]) && check)
+			console.log(allElements[i][0] + "   " + allElements[i][1]);
+			if(!checkForm(allElements[i][0], allElements[i][1]) && check)
 			{
 				console.log("BAD");
-				badElement = elements[i];
+				badElement = allElements[i][0];
 				check = false;
 			}
 		}
-
+		console.log("BAD ELEMENT:" + badElement);
 		if(!check)
 		{
 			$('html, body').animate({
@@ -81,9 +72,9 @@ parent1Email:email
 });
 
 
-function checkForm(element)
+function checkForm(element, type)
 {
-	if(!validate(element))
+	if(!validate(element, type))
 	{
 		$("#" + element).parents("div.form-group").addClass("has-error");
 
@@ -96,13 +87,25 @@ function checkForm(element)
 		return true;
 	}
 }
-
-function validate(id)
+	
+	// types: radio, text, select, dob, email, phone, number-zip
+function validate(id, type)
 {
-	var type = $("#" + id).attr("type");
 	console.log(type);
 	switch(type)
 	{
+		case "radio":
+			return validateRadio(id);
+			break;
+		case "select":
+			return validateSelect(id);
+			break;
+		case "phone":
+			return validatePhone(id);
+			break;
+		case "number-zip":
+			return /^\d{5}$/.test($("#" + id).val());
+			break;
 		case "text":
 			return /^[A-Za-z0-9]+$/.test($("#" + id).val());
 			break;
@@ -114,6 +117,27 @@ function validate(id)
 	// return regex.test($("#" + id).val());
 }
 
+function validateRadio(element)
+{
+	if(radioStore[element] === "")
+		return false;
+	return true;
+}
+
+function validateSelect(element)
+{
+	if($("#" + element).val().trim().length === 0)
+		return false;
+	return true;
+}
+
+function validatePhone(element)
+{
+	// FOR TESTING: IF LENGTH != TO 0, THEN PHONE IS OKAY
+	if($("#" + element).val().trim.length === 0)
+		return false;
+	return true;
+}
 
 function print()
 {

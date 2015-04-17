@@ -28,6 +28,9 @@
 	<![endif]-->
 
 	<style type="text/css">
+	red{
+		color: red;
+	}
 	#form-div{
 		width: 75%;
 		margin: 0 auto;
@@ -82,8 +85,8 @@
 		<form class="form-horizontal">
 
 			<div class="form-group radio-group">
-				<label class="col-md-4 control-label" for="session">Camp Session</label>
-				<div class="col-md-4 session"> 
+				<label class="col-md-4 control-label" for="session">Camp Session<red>  *</red></label>
+				<div class="col-md-4 session" id="session"> 
 					<label class="radio-inline" for="jun1519">
 						<input type="radio" name="radio-session" id="jun1519">
 						June 15-19 (Junior)
@@ -108,14 +111,14 @@
 			</div>
 
 			<div class="form-group">
-				<label class="col-md-4 control-label" for="firstName">Student's First Name</label>  
+				<label class="col-md-4 control-label" for="firstName">Student's First Name<red>  *</red></label>  
 				<div class="col-md-4">
 					<input id="firstName" type="text" class="form-control">
 				</div>
 			</div>
 
 			<div class="form-group">
-				<label class="col-md-4 control-label" for="lastName">Student's Last Name</label>  
+				<label class="col-md-4 control-label" for="lastName">Student's Last Name<red>  *</red></label>  
 				<div class="col-md-4">
 					<input id="lastName" type="text"  class="form-control input-md">
 				</div>
@@ -123,7 +126,7 @@
 
 
 			<div class="form-group radio-group">
-				<label class="col-md-4 control-label" for="gender">Gender</label>
+				<label class="col-md-4 control-label" for="gender">Gender<red>  *</red></label>
 				<div class="col-md-4 gender"> 
 					<label class="radio-inline" for="male">
 						<input type="radio" name="radio-gender" id="male" value="male">
@@ -137,29 +140,29 @@
 			</div>
 
 			<div class="form-group">
-				<label class="col-md-4 control-label" for="grade">Grade in Fall 2015</label>
+				<label class="col-md-4 control-label" for="grade">Grade in Fall 2015<red>  *</red></label>
 				<div class="col-md-4">
 					<select id="grade" name="grade" class="form-control">
-						<option value="1">--</option>
-						<option value="">3rd</option>
-						<option value="">4th</option>
-						<option value="">5th</option>
-						<option value="">6th</option>
-						<option value="">7th</option>
-						<option value="">8th</option>
+						<option value="">--</option>
+						<option value="3">3rd</option>
+						<option value="4">4th</option>
+						<option value="5">5th</option>
+						<option value="6">6th</option>
+						<option value="7">7th</option>
+						<option value="8">8th</option>
 					</select>
 				</div>
 			</div>
 
 			<div class="form-group">
-				<label class="col-md-4 control-label" for="studentDOB">Student DOB</label>  
+				<label class="col-md-4 control-label" for="studentDOB">Student DOB<red>  *</red></label>  
 				<div class="col-md-4">
 					<input id="studentDOB" type="text" placeholder="MM/DD/YYYY" class="form-control input-md">
 				</div>
 			</div>
 
 			<div class="form-group">
-				<label class="col-md-4 control-label" for="studentSchool">School</label>  
+				<label class="col-md-4 control-label" for="studentSchool">School<red>  *</red></label>  
 				<div class="col-md-4">
 					<input id="studentSchool" type="text" class="form-control input-md">
 				</div>
@@ -167,7 +170,7 @@
 
 
 			<div class="form-group">
-				<label class="col-md-4 control-label" for="studentEmail">Student Email</label>  
+				<label class="col-md-4 control-label" for="studentEmail">Student Email<red>  *</red></label>  
 				<div class="col-md-4">
 					<input id="studentEmail" type="email" class="form-control input-md">
 				</div>
@@ -181,7 +184,7 @@
 			</div>
 
 			<div class="form-group radio-group">
-				<label class="col-md-4 control-label" for="shirt">T-Shirt Size</label>
+				<label class="col-md-4 control-label" for="shirt">T-Shirt Size<red>  *</red></label>
 				<div class="col-md-4 shirt"> 
 					<label class="radio-inline" for="small">
 						<input type="radio" name="radio-shirt" id="small" value="small">
@@ -200,56 +203,56 @@
 
 
 			<div class="form-group">
-				<label class="col-md-4 control-label" for="studentStreet">Street Address</label>  
+				<label class="col-md-4 control-label" for="studentStreet">Street Address<red>  *</red></label>  
 				<div class="col-md-4">
 					<input id="studentStreet" type="text" class="form-control input-md">
 				</div>
 			</div>
 
 			<div class="form-group">
-				<label class="col-md-4 control-label" for="studentCity">City</label>  
+				<label class="col-md-4 control-label" for="studentCity">City<red>  *</red></label>  
 				<div class="col-md-4">
 					<input id="studentCity" type="text" class="form-control input-md">
 				</div>
 			</div>
 
 			<div class="form-group">
-				<label class="col-md-4 control-label" for="studentState">State</label>  
+				<label class="col-md-4 control-label" for="studentState">State<red>  *</red></label>  
 				<div class="col-md-4">
 					<input id="studentState" type="text" class="form-control input-md">
 				</div>
 			</div>
 
 			<div class="form-group">
-				<label class="col-md-4 control-label" for="studentZip">Zip Code</label>  
+				<label class="col-md-4 control-label" for="studentZip">Zip Code<red>  *</red></label>  
 				<div class="col-md-4">
 					<input id="studentZip" type="number" class="form-control input-md">
 				</div>
 			</div>
 
 			<div class="form-group">
-				<label class="col-md-4 control-label" for="homePhone">Home Phone Number</label>  
+				<label class="col-md-4 control-label" for="homePhone">Home Phone Number<red>  *</red></label>  
 				<div class="col-md-4">
 					<input id="homePhone" type="phone" class="form-control input-md">
 				</div>
 			</div>
 
 			<div class="form-group">
-				<label class="col-md-4 control-label" for="parent1">Name of Parent/Guardian 1</label>  
+				<label class="col-md-4 control-label" for="parent1">Name of Parent/Guardian 1<red>  *</red></label>  
 				<div class="col-md-4">
 					<input id="parent1" type="text" class="form-control input-md">
 				</div>
 			</div>
 
 			<div class="form-group">
-				<label class="col-md-4 control-label" for="parent1Phone">Phone Number</label>  
+				<label class="col-md-4 control-label" for="parent1Phone">Phone Number<red>  *</red></label>  
 				<div class="col-md-4">
 					<input id="parent1Phone" type="phone" class="form-control input-md">
 				</div>
 			</div>
 
 			<div class="form-group">
-				<label class="col-md-4 control-label" for="parent1Email">Email</label>  
+				<label class="col-md-4 control-label" for="parent1Email">Email<red>  *</red></label>  
 				<div class="col-md-4">
 					<input id="parent1Email" type="email" class="form-control input-md">
 				</div>
