@@ -17,43 +17,79 @@ $(document).ready(function(){
 
 	$("#submitButton").click(function(e){
 		e.preventDefault();
-		alert("a");
+		// alert("a");
 		var elements = 
 		["firstName",
 		"lastName",
-		// "grade",
 		"studentDOB",
 		"studentSchool",
 		"studentEmail"];
 
-		// var check = true;
+		var allElements = 
+		{
+			"session":"radio",
+			"firstName":"text",
+
+		}
+
+firstName
+lastName
+
+gender:radio
+
+grade:select
+studentDOB:number-special
+
+studentSchool
+studentEmail:email
+
+shirt:radio
+
+studentStreet
+studentCity
+studentState
+studentZip
+
+homePhone
+parent1Name
+parent1Phone
+parent1Email
+
+		var check = true;
 		var badElement;
 		for(var i = 0; i < elements.length; i++)
 		{
-			if(!checkForm(elements[i]))
+			console.log(elements[i]);
+			if(!checkForm(elements[i]) && check)
 			{
-				$('html, body').animate({
-					scrollTop: $("#" + elements[i] + "-label").offset().top
-				}, 650);
-				break;
-
+				console.log("BAD");
+				badElement = elements[i];
+				check = false;
 			}
 		}
 
+		if(!check)
+		{
+			$('html, body').animate({
+				scrollTop: $("#" + badElement).offset().top
+			}, 650);
+		}
 
 	});
 });
 
 
-function checkForm()
+function checkForm(element)
 {
 	if(!validate(element))
 	{
+		$("#" + element).parents("div.form-group").addClass("has-error");
 
 		return false;
 	}
 	else
 	{
+		$("#" + element).parents("div.form-group").removeClass("has-error");
 
 		return true;
 	}
@@ -85,12 +121,3 @@ function print()
 	}
 	// return console.log(radioStore['session']);
 }
-
-
-
-
-/* var associative_array = new Array();
-associative_array["one"] = "Lorem";
-associative_array["two"] = "Ipsum";
-associative_array["three"] = "dolor";
-for (i in associative_array) { alert(i) };*/

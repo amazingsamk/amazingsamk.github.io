@@ -1,8 +1,10 @@
 IDs for form elements:
 firstName
 lastName
+
 grade
 studentDOB
+
 studentSchool
 studentEmail
 studentNeeds
@@ -15,6 +17,7 @@ homePhone
 parent1Name
 parent1Phone
 parent1Email
+
 parent2Name
 parent2Phone
 parent2Email
