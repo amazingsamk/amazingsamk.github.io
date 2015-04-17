@@ -29,31 +29,33 @@ $(document).ready(function(){
 		{
 			"session":"radio",
 			"firstName":"text",
+			"lastName":"text",
+			"gender":"radio",
+			"grade":"select",
+			"studentDOB":"dob",
+			"studentSchool":"text",
+			"studentEmail":"email",
+			"shirt":"radio",
+			"studentStreet":"text",
+			"studentCity":"text",
+			"studentState":"text",
+			"studentZip":"text",
+			"homePhone":"phone",
+			"parent1Name":"text",
+			"parent1Phone":"phone",
+			"parent1Email":"email"
 
-		}
-
-firstName
-lastName
-
-gender:radio
-
-grade:select
-studentDOB:number-special
-
-studentSchool
-studentEmail:email
-
-shirt:radio
+		};
 
 studentStreet
 studentCity
 studentState
 studentZip
 
-homePhone
+homePhone:phone
 parent1Name
-parent1Phone
-parent1Email
+parent1Phone:phone
+parent1Email:email
 
 		var check = true;
 		var badElement;
