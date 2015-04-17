@@ -67,6 +67,10 @@ $(document).ready(function(){
 				scrollTop: $("#" + badElement).offset().top
 			}, 650);
 		}
+		else
+		{
+			alert("form okay, all inputs good")
+		}
 
 	});
 });
@@ -101,10 +105,14 @@ function validate(id, type)
 			return validateSelect(id);
 			break;
 		case "phone":
-			return validatePhone(id);
+			return /^\d{10}$/.test($("#" + id).val());
+			// return validatePhone(id);
 			break;
 		case "number-zip":
 			return /^\d{5}$/.test($("#" + id).val());
+			break;
+		case "dob":
+			return /^\d{6}$/.test($("#" + id).val());
 			break;
 		case "text":
 			return /^[A-Za-z0-9]+$/.test($("#" + id).val());
