@@ -32,6 +32,7 @@
 
 	#dg{
 		padding-top: 0;
+		padding-bottom: 0;
 	}
 
 	.special-label{
@@ -57,6 +58,14 @@
 	.course-info{
 		background-color: rgb(224,224,224);
 		/*width: 100%;*/
+	}
+
+	#label-closed{
+		background-color: #3498db !important;
+	}
+
+	.special-label{
+		background-color: #c0392b !important;
 	}
 
 
@@ -131,6 +140,7 @@
 					<!-- START PRICING TABLE 2-->
 					<div class="pricing-option">
 						<div class="pricing-top">
+							<span class="special-label">Filling Fast!</span>
 							<span class="pricing-edition">session 2</span>
 							<span class="price">
 								<span class="class-name">July 6-10</span>
@@ -148,7 +158,7 @@
 					<div class="pricing-option">
 						<div class="pricing-top">
 							<span class="pricing-edition">session 3</span>
-							<span class="special-label">Closed</span>
+							<span id="label-closed" class="special-label">Closed</span>
 
 							<span class="price">
 								<span class="class-name">July 13-17</span>
