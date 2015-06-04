@@ -5,6 +5,16 @@
  */
 
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
+
+
+.selected {
+  color: #81D425 !important;
+}
+
+
+
+
+
 html {
   font-family: sans-serif;
   -webkit-text-size-adjust: 100%;
