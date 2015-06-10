@@ -8,6 +8,18 @@
  * Licensed under MIT
 */
 
+
+hr.small {
+  max-width: 100px;
+  margin: 15px auto;
+  border-width: 4px;
+  border-color: white;
+}
+
+
+
+
+
 body {
 	font: 300 14px/1.8 'Raleway', sans-serif;
 	color: #666;
